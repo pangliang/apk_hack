@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #
 # dex2jar - Tools to work with android .dex and java .class files
 # Copyright (c) 2009-2012 Panxiaobo
@@ -37,4 +36,5 @@ for k in "$PRGDIR"/lib/*.jar
 do
  _classpath="${_classpath}:${k}"
 done
-java -Xms512m -Xmx1024m -classpath "${_classpath}" "com.googlecode.dex2jar.v3.Main" "$@"
+echo ${_classpath}
+java -Xms512m -Xmx1024m -classpath ${_classpath} "com.googlecode.dex2jar.v3.Main" "$@"
