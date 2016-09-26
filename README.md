@@ -2,4 +2,7 @@
 
 使用方法：
 
-# ./decompile_apk.sh your_apk_file
+```shell
+./decompile_apk.sh your_apk_file
+```
+
